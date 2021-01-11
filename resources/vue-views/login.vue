@@ -64,12 +64,6 @@
                                         Login
                                     </button>
                                 </div>
-                                <div class="form-group  text-center">
-                                    Tidak Memiliki Akun ?
-                                    <div @click="registrasi = !registrasi" class="cp text-primary">
-                                        Daftar
-                                    </div>
-                                </div>
                             </form>
                         </div>
                     </div>
@@ -80,12 +74,11 @@
     </div>
 </template>
 <script>
-import registrasiComp from './registrasi';
+
 import VueRecaptcha from 'vue-recaptcha';
 
 export default {
     components: {
-        registrasiComp,
         VueRecaptcha
     },
     data() {
